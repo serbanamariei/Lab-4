@@ -33,10 +33,11 @@ This folder contains solved problems from Lab 4 of the "Programming Fundamentals
 
 To compile and link C programs using multiple source files:
 
+```bash
 clang -Wall -c functions.c     # Compile your functions
 clang -Wall -c main.c          # Compile your main program
 clang functions.o main.o -o program_name  # Link everything into executable
 
-If math functions are used (e.g. floor, sin, exp), link with:
+# If math functions are used (e.g. floor, sin, exp), link with:
 
 clang functions.o main.o -lm -o program_name
